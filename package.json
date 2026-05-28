@@ -1,9 +1,11 @@
 {
   "type": "module",
   "scripts": {
-    "dev": "observable preview",
-    "build": "observable build",
-    "deploy": "observable deploy"
+  "dev": "observable preview",
+  "build": "observable build",
+  "deploy": "observable deploy",
+  "predeploy": "npm run build",
+  "deploy-gh": "gh-pages -d dist"
   },
   "dependencies": {
     "@observablehq/framework": "latest",
@@ -27,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/mgodje/d3_visualization_asgn5_csc477/issues"
   },
-  "homepage": "https://github.com/mgodje/d3_visualization_asgn5_csc477#readme"
+  "homepage": "https://github.com/mgodje/d3_visualization_asgn5_csc477#readme",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
