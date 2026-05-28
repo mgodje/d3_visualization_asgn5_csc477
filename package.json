@@ -2,10 +2,7 @@
   "type": "module",
   "scripts": {
   "dev": "observable preview",
-  "build": "observable build",
-  "deploy": "observable deploy",
-  "postbuild": "echo. > dist/.nojekyll",
-  "deploy-gh": "npm run build && gh-pages -d dist"
+  "build": "observable build"
 },
   "dependencies": {
     "@observablehq/framework": "latest",
