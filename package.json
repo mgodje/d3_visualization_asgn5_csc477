@@ -4,9 +4,9 @@
   "dev": "observable preview",
   "build": "observable build",
   "deploy": "observable deploy",
-  "predeploy": "npm run build",
-  "deploy-gh": "gh-pages -d dist"
-  },
+  "postbuild": "echo. > dist/.nojekyll",
+  "deploy-gh": "npm run build && gh-pages -d dist"
+},
   "dependencies": {
     "@observablehq/framework": "latest",
     "d3": "^7.9.0",
