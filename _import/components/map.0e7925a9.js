@@ -1,7 +1,7 @@
+import "../../_npm/d3-transition@3.0.1/004da2ac.js";
 import {create} from "../../_npm/d3-selection@3.0.0/4d94e5b7.js";
 import {geoPath, geoAlbersUsa} from "../../_npm/d3-geo@3.1.1/40599fb3.js";
 import {scaleLinear} from "../../_npm/d3-scale@4.0.2/720b7f0a.js";
-import {extent} from "../../_npm/d3-array@3.2.4/e93ca09f.js";
 import {zoom, zoomIdentity} from "../../_npm/d3-zoom@3.0.0/b5786b3f.js";
 
 export function lifeExpectancyMap(health, counties, states) {
