@@ -1,12 +1,15 @@
 # US Life Expectancy Explorer
 
-Interactive visualization of life expectancy across the United States.
-
 ```js
 import { lifeExpectancyMap } from "./components/map.js"
+import { feature } from "npm:topojson-client"
 ```
 
 ```js
-const chart = await lifeExpectancyMap()
-display(chart)
+const health = await FileAttachment("data/health.csv").csv({typed: true})
+const topo = await FileAttachment("data/counties-10m.json").json()
+const counties = feature(topo, topo.objects.counties).features
+const states = feature(topo, topo.objects.states).features
+
+display(lifeExpectancyMap(health, counties, states))
 ```
