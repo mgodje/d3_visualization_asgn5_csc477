@@ -1,4 +1,4 @@
-# US Life Expectancy Explorer
+# U.S. Life Expectancy by County During the COVID-19 Pandemic
 
 ```js
 import { lifeExpectancyMap } from "./components/map.js"
